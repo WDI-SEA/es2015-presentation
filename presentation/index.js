@@ -57,12 +57,13 @@ export default class Presentation extends React.Component {
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1}>
-              Intro to ReactJS
+              ES2015
             </Heading>
-            <Heading size={1} fit caps>
-              A JavaScript library for User Interfaces
-            </Heading>
-            <Heading size={2} textSize="1.5em" margin="20px 0px 0px">Hit Your Right Arrow To Begin!</Heading>
+            <Appear fid="1">
+              <Heading size={1} fit caps>
+                Use cases at General Assembly
+              </Heading>
+            </Appear>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
             <Codepen user="bhague1281" hash="NxOdgv" />
