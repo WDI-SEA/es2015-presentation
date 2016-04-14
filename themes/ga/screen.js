@@ -160,8 +160,8 @@ var screen = function screen() {
         paddingLeft: 40,
         display: "block",
         color: colors.tertiary,
-        fontSize: "4.9rem",
-        lineHeight: 1,
+        fontSize: "2.9rem",
+        lineHeight: 1.2,
       },
       cite: {
         color: colors.tertiary,

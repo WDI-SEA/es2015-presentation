@@ -65,6 +65,25 @@ export default class Presentation extends React.Component {
               </Heading>
             </Appear>
           </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <BlockQuote>
+              <Quote>Suddenly the amount of users grew and grew, the philosophy that I set for the project resonated with a lot of people and 6to5 rode the ES6 hype train right to the top.</Quote>
+              <Cite>Sebastian McKenzie, creator of Babel</Cite>
+            </BlockQuote>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+            <Heading size={1} fit caps>
+              Our Approach to ES2015
+            </Heading>
+            <List>
+              <Appear><ListItem>Frame the conversation</ListItem></Appear>
+              <Appear><ListItem>Create a need for students to learn it</ListItem></Appear>
+              <Appear><ListItem>ReactJS and tooling</ListItem></Appear>
+              <Appear><ListItem>Spoonfeed the different features</ListItem></Appear>
+              <Appear><ListItem>Compare features to other languages</ListItem></Appear>
+              <Appear><ListItem>Have fun!</ListItem></Appear>
+            </List>
+          </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
             <Codepen user="bhague1281" hash="NxOdgv" />
             <Heading size={2} caps fit textColor="primary">
