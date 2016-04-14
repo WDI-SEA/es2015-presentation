@@ -76,7 +76,7 @@ export default class Presentation extends React.Component {
               Our Approach to ES2015
             </Heading>
             <List>
-              <Appear><ListItem>Frame the conversation</ListItem></Appear>
+              <Appear><ListItem>Frame the conversation, but refer early</ListItem></Appear>
               <Appear><ListItem>Create a need for students to learn it</ListItem></Appear>
               <Appear><ListItem>ReactJS and tooling</ListItem></Appear>
               <Appear><ListItem>Spoonfeed the different features</ListItem></Appear>
@@ -85,20 +85,24 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-            <Codepen user="bhague1281" hash="NxOdgv" />
             <Heading size={2} caps fit textColor="primary">
-              Wait what?
+              We Like CodePen
             </Heading>
             <Heading size={3} caps textColor="tertiary">
-              That's Right. Codepen in your presentations.
+              No tooling, no setup. Just Babel + SCSS
             </Heading>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-            <CodePane
-              lang="jsx"
-              source={require("raw!../assets/deck.example")}
-              margin="20px auto"
-            />
+            <Codepen user="bhague1281" hash="EKyMVz" height="500" />
+          </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Codepen user="bhague1281" hash="aNZPrq" height="500" />
+          </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Codepen user="bhague1281" hash="YwjQwW" height="500" />
+          </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Codepen user="bhague1281" hash="GZWMYw" height="500" />
           </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
@@ -179,7 +183,10 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
           </Slide>
           <Slide transition={["spin", "slide"]} bgColor="tertiary">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-              Made with love in Seattle by
+              Made with love in Seattle
+            </Heading>
+            <Heading size={5} caps fit lineHeight={1.5} textColor="secondary">
+              Created with Spectable, a React presentation library by
             </Heading>
             <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
           </Slide>
