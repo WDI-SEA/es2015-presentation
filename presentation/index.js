@@ -71,7 +71,7 @@ export default class Presentation extends React.Component {
               <Cite>Sebastian McKenzie, creator of Babel</Cite>
             </BlockQuote>
           </Slide>
-          <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <Slide transition={["slide"]} bgColor="secondary" textColor="primary">
             <Heading size={1} fit caps>
               Our Approach to ES2015
             </Heading>
@@ -104,86 +104,73 @@ export default class Presentation extends React.Component {
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <Codepen user="bhague1281" hash="GZWMYw" height="500" />
           </Slide>
+          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+            <Heading fit>
+              But students are quick to point out...
+            </Heading>
+            <Heading caps>
+              What about production code?
+            </Heading>
+          </Slide>
           <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
-            <Appear fid="1">
+            <Appear>
               <Heading size={1} caps fit>
-                Full Width
+                Gulp + Browserify
               </Heading>
             </Appear>
-            <Appear fid="2">
-              <Heading size={1} caps fit textColor="tertiary">
-                Adjustable Darkness
-              </Heading>
-            </Appear>
-            <Appear fid="3">
-              <Heading size={1} caps fit textColor="primary">
-                Background Imagery
-              </Heading>
-            </Appear>
-          </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="primary">
-            <Heading caps fit>Flexible Layouts</Heading>
-            <Layout>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Left
-                </Heading>
-              </Fill>
-              <Fill>
-                <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
-                  Right
-                </Heading>
-              </Fill>
-            </Layout>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <BlockQuote>
-              <Quote>Wonderfully formatted quotes</Quote>
-              <Cite>Ken Wheeler</Cite>
-            </BlockQuote>
-          </Slide>
-          <Slide transition={["spin", "zoom"]} bgColor="tertiary">
-            <Heading caps fit size={1} textColor="primary">
-              Inline Markdown
-            </Heading>
-            <Markdown>
-              {`
-![Markdown Logo](${images.markdown.replace("/", "")})
-
-You can write inline images, [Markdown Links](http://commonmark.org), paragraph text and most other markdown syntax
-* Lists too!
-* With ~~strikethrough~~ and _italic_
-* And lets not forget **bold**
-              `}
-            </Markdown>
-          </Slide>
-          <Slide transition={["slide", "spin"]} bgColor="primary">
-            <Heading caps fit size={1} textColor="tertiary">
-              Smooth
-            </Heading>
-            <Heading caps fit size={1} textColor="secondary">
-              Combinable Transitions
-            </Heading>
-          </Slide>
-          <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-            <List>
-              <Appear><ListItem>Inline style based theme system</ListItem></Appear>
-              <Appear><ListItem>Autofit text</ListItem></Appear>
-              <Appear><ListItem>Flexbox layout system</ListItem></Appear>
-              <Appear><ListItem>React-Router navigation</ListItem></Appear>
-              <Appear><ListItem>PDF export</ListItem></Appear>
-              <Appear><ListItem>And...</ListItem></Appear>
+            <List textColor="tertiary">
+              <Appear><ListItem>Explain browserify and modules</ListItem></Appear>
+              <Appear><ListItem>Code vs. config</ListItem></Appear>
+              <Appear><ListItem>Use Gulp to apply ES2015 to a project</ListItem></Appear>
+              <Appear><ListItem>Show recipes for other common tasks</ListItem></Appear>
+              <Appear><ListItem><strong>Spoonfeed. </strong> Talk about Gulpfile + Babel later</ListItem></Appear>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading size={1} caps fit textColor="tertiary">
-              Your presentations are interactive
+          <Slide transition={["zoom", "fade"]} bgColor="primary">
+            <iframe src="https://wdi_sea.gitbooks.io/notes/content/10-react/react-gulp-browserify/additional-gulp-tasks.html"
+                    width="100%" height="600" frameBorder="0" />
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading caps>
+              What could we do better?
             </Heading>
-            <Interactive/>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading caps>
+              What we can add
+            </Heading>
+            <List textColor="tertiary">
+              <Appear><ListItem>Webpack instead of Gulp</ListItem></Appear>
+              <Appear><ListItem>Cover more features, like destructuring, Object.assign, generators</ListItem></Appear>
+              <Appear><ListItem>TypeScript (ES7)</ListItem></Appear>
+              <Appear><ListItem>Show recipes for other common tasks</ListItem></Appear>
+              <Appear><ListItem><strong>Spoonfeed. </strong> Talk about Gulpfile + Babel later</ListItem></Appear>
+            </List>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading caps fit>
+              What we can prevent
+            </Heading>
+            <br />
+            <Appear>
+              <Heading caps fit>
+                JavaScript Fatigue <br /> and...
+              </Heading>
+            </Appear>
+            <Appear>
+              <Heading caps fit>
+                Lack of Discovery
+              </Heading>
+            </Appear>
+          </Slide>
+          <Slide transition={["slide", "spin"]} bgColor="primary">
+            <Heading fit textColor="tertiary">
+              Your Opinion? Questions?
+            </Heading>
           </Slide>
           <Slide transition={["spin", "slide"]} bgColor="tertiary">
             <Heading size={1} caps fit lineHeight={1.5} textColor="primary">
-              Made with love in Seattle
+              Made with &hearts; in Seattle, WA
             </Heading>
             <Heading size={5} caps fit lineHeight={1.5} textColor="secondary">
               Created with Spectable, a React presentation library by
