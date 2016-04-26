@@ -59,18 +59,19 @@ export default class Presentation extends React.Component {
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="primary" notes="Frame in terms of new-ness and hype, but useful features">
             <Heading size={1} fit caps lineHeight={1}>
-              ES2015
+              ES6
             </Heading>
             <Heading size={1} fit caps>
               Use cases at General Assembly
             </Heading>
           </Slide>
-          <Slide transition={["slide"]} bgColor="secondary" textColor="primary" notes="Ask instructors their opinions of ES2015.">
+          <Slide transition={["slide"]} bgColor="secondary" textColor="primary" notes="Ask instructors their opinions of ES6.">
+            <Heading size={1} lineHeight={1}>
+              What is ES6?
+            </Heading>
             <Heading size={1} lineHeight={1}>
               What do you think of the hype?
             </Heading>
-            <br />
-            <Image src={images.hype} />
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="Fun fact: McKenzie was 17 when he created Babel. That was just a couple years ago.">
             <BlockQuote>
@@ -80,7 +81,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["slide"]} bgColor="secondary" textColor="primary" notes="<ul><li>Giving hints about ES6 -> students get excited and curious</li><li>Writing ES6 w/React gives a purpose... even if it's a false one. Everyone does this in ES6, right guys?</li><li>Comparing constants, classes, template strings, modules, symbols. VERY easy after covering Ruby</li></ul>">
             <Heading size={1} fit caps>
-              Our Approach to ES2015
+              Seattle's Approach to ES6
             </Heading>
             <List>
               <Appear><ListItem>Frame the conversation, and start the conversation early</ListItem></Appear>
@@ -89,22 +90,6 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Compare features to other languages, <strong>especially Ruby</strong></ListItem></Appear>
               <Appear><ListItem>Have fun!</ListItem></Appear>
             </List>
-          </Slide>
-          <Slide transition={["zoom"]} bgColor="secondary" notes="First class teaching ES2015 on top of React. So here we go...">
-            <Heading size={1} fit caps lineHeight={1}>
-              Seattle WDI Doppio
-            </Heading>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <Heading size={1} caps>
-              Make it Sweet
-            </Heading>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="secondary" textColor="primary" notes="Letting everyone know that these changes are really just facades gives more context.">
-            <Image width="40%" src={images.sugar} />
-            <Heading size={1} lineHeight={1}>
-              (Classes)
-            </Heading>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="The advanced students can play around in the Babel REPL and see the conversion to ES5">
             <iframe src="https://wdi_sea.gitbooks.io/notes/content/02-js-jquery/js-inheritance/04es6classes.html"
@@ -128,10 +113,6 @@ export default class Presentation extends React.Component {
             <Codepen user="bhague1281" hash="aNZPrq" height="500" />
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading size={1} caps>
-              That's All Folks
-            </Heading>
-            <br />
             <Heading size={2} textColor="tertiary">
               Now in the context of React
             </Heading>
@@ -142,14 +123,6 @@ export default class Presentation extends React.Component {
           <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>Stopwatch</li><li>Students freak less, then find that there's a tutorial of this online... whoops!</li></ul>">
             <Codepen user="bhague1281" hash="GZWMYw" height="500" />
           </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="secondary" notes="We point out the limits of Codepen anyways, but yeah.">
-            <Heading fit>
-              But students are quick to point out...
-            </Heading>
-            <Heading caps>
-              What about production code?
-            </Heading>
-          </Slide>
           <Slide transition={["slide"]} bgColor="secondary" textColor="tertiary" notes="<ul><li>We don't use ES6 modules yet, only CommonJS. We should though, for a quick destructuring lesson.</li><li>Students appreciate Gulp, and it's easy to find plugins.</li></ul>">
             <Heading size={1} caps fit>
               Gulp + Browserify
@@ -157,9 +130,9 @@ export default class Presentation extends React.Component {
             <List textColor="tertiary">
               <Appear><ListItem>Explain browserify and modules</ListItem></Appear>
               <Appear><ListItem>Gulp: More code vs. more config</ListItem></Appear>
-              <Appear><ListItem>Use Gulp to apply ES2015 to a project</ListItem></Appear>
+              <Appear><ListItem>Use Gulp to apply ES6 to a project</ListItem></Appear>
               <Appear><ListItem>Show recipes for other common tasks. Read: <strong>ESLint</strong>, other concepts</ListItem></Appear>
-              <Appear><ListItem><strong>Spoonfeed. </strong> Talk about incorporating ES2015 + Gulp later</ListItem></Appear>
+              <Appear><ListItem><strong>Spoonfeed. </strong> Talk about incorporating ES6 + Gulp later</ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["zoom", "fade"]} bgColor="primary">
@@ -167,23 +140,29 @@ export default class Presentation extends React.Component {
                     width="100%" height="600" frameBorder="0" />
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading caps>
-              What could we do better?
+            <Heading>
+              1. Should we start teaching it?
+            </Heading>
+            <Heading>
+              2. If so, what are the features?
+            </Heading>
+            <Heading>
+              3. When should we teach these features?
             </Heading>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="<ul><li>We don't mention promises, just use them early on via AJAX/Sequelize. If students ask, we'll introduce $q, which is very similar</li><li>We don't go into writing the Gulpfile in ES6. Thoughts?</li></ul>">
             <Heading caps>
-              Ideas to Think About
+              Other Ideas to Think About
             </Heading>
             <List textColor="tertiary">
               <Appear><ListItem>Webpack instead of Gulp</ListItem></Appear>
               <Appear><ListItem>Cover more features, like destructuring, Object.assign, generators, <strong>if there's a need</strong></ListItem></Appear>
-              <Appear><ListItem>TypeScript (ES2016)</ListItem></Appear>
+              <Appear><ListItem>TypeScript (ES7)</ListItem></Appear>
               <Appear><ListItem>Show recipes for other common tasks</ListItem></Appear>
-              <Appear><ListItem><strong>Spoonfeed. </strong> Talk about Gulpfile + Babel later</ListItem></Appear>
+              <Appear><ListItem>Node, Gulpfile in ES6</ListItem></Appear>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black" notes="There's only so much ES2015 we can teach, given our time constraints. Pick and choose wisely.">
+          <Slide transition={["slide"]} bgColor="black" notes="There's only so much ES6 we can teach, given our time constraints. Pick and choose wisely.">
             <Heading caps fit>
               What we can prevent
             </Heading>
@@ -204,14 +183,14 @@ export default class Presentation extends React.Component {
               Seattle Trends
             </Heading>
             <List>
-              <Appear><ListItem>Introducing many ES2015 features and React at the same time works</ListItem></Appear>
+              <Appear><ListItem>Introducing many ES6 features and React at the same time works</ListItem></Appear>
               <Appear><ListItem>Context for each feature allowed for easier buy-in</ListItem></Appear>
-              <Appear><ListItem>Students didn't struggle with ES2015. React itself however...</ListItem></Appear>
+              <Appear><ListItem>Students didn't struggle with ES6. React itself however...</ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading fit textColor="tertiary">
-              Your Opinion? Questions?
+              Additional Opinions? Questions?
             </Heading>
           </Slide>
           <Slide transition={["spin", "slide"]} bgColor="tertiary">
