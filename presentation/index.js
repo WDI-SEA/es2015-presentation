@@ -198,7 +198,7 @@ export default class Presentation extends React.Component {
               Made with &hearts; in Seattle, WA
             </Heading>
             <Heading size={5} caps fit lineHeight={1.5} textColor="secondary">
-              Created with Spectable, a React presentation library by
+              Created with Spectacle, a React presentation library by
             </Heading>
             <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
           </Slide>
